@@ -1,7 +1,7 @@
 function getNeighbors(row, col, graph) {
-
+let neighbors = []
   // Check top
-
+  if (row - 1 >=0 && graph[row-1][col] === 1 )
   // Check bottom
 
   // Check left
@@ -10,7 +10,7 @@ function getNeighbors(row, col, graph) {
 
   // Return neighbors
 
-  // Your code here 
+  // Your code here
 }
 
 
@@ -26,18 +26,18 @@ function islandSize(row, col, graph) {
 
   // While the stack is not empty,
 
-    // Pop the first node
+  // Pop the first node
 
-    // DO THE THING (increment size by 1)
+  // DO THE THING (increment size by 1)
 
-    // Then push all the UNVISITED neighbors on top of the stack
-    // and mark them as visited
-    // HINT: This is what your helper function `getNeighbors` is for
-    // HINT: Remember, you're storing your visited nodes as strings!
+  // Then push all the UNVISITED neighbors on top of the stack
+  // and mark them as visited
+  // HINT: This is what your helper function `getNeighbors` is for
+  // HINT: Remember, you're storing your visited nodes as strings!
 
   // return size
 
-  // Your code here 
+  // Your code here
 }
 
 module.exports = [getNeighbors, islandSize];
